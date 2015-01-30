@@ -1,0 +1,72 @@
+html{ 
+	background-image:url("https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10882203_10152632643124053_4063156651353536299_n.jpg?oh=181944436fe265043abd9e80e0422350&oe=55640121&__gda__=1431876702_34e23ead194297484726a9016c39fb24")}
+h1{
+	font-family: Satisfy, cursive;
+	font-weight: normal;
+	font-size:60px;
+	color: white;
+	text-align: center;
+}
+ul{
+	color: white;
+	font-family: Georgia;
+	text-align: ; 
+}
+
+.container{
+	counter-reset: cnt;
+	position:relative;
+	text-align:center;
+	padding:20px 0;
+	width:420px;
+	height: 160px;
+	margin: 0 auto;
+}
+.container::before{
+	display: block;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	padding:15px;
+}
+.container span{
+	display:inline-block;
+	padding:2px 6px;
+	background-color:White;
+	color:#186C72;
+	border-radius:10px;
+	margin:3px;
+	cursor:default;
+	border-bottom: solid black;
+	border-right: solid black;
+}
+.container span::after{
+
+	/* Every time this rule is executed, the 
+	   counter value is increased by 1 */
+	counter-increment: cnt;
+
+	/* Add the counter value as part of the content */
+	content:" #" counter(cnt);
+
+	display:inline-block;
+	padding:4px;
+}
+.container span::before{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	content:attr(data-title);
+	color:white;
+
+	opacity:0;
+
+	/* Animate the transitions */
+	-webkit-transition:opacity 0.4s;
+	transition:opacity 0.4s;
+}
+
+.container span:hover::before{
+	opacity:1;
+}
