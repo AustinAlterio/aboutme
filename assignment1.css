@@ -1,5 +1,6 @@
 html{ 
 	background-image:url("https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10882203_10152632643124053_4063156651353536299_n.jpg?oh=181944436fe265043abd9e80e0422350&oe=55640121&__gda__=1431876702_34e23ead194297484726a9016c39fb24");
+	background-position:center;
 }
 
 h1{
@@ -35,9 +36,9 @@ ul{
 	display:inline-block;
 	padding:2px 6px;
 	background-color:White;
-	color:#186C72;
-	border-radius:10px;
-	margin:3px;
+	color:blue;
+	border-radius:100px;
+	margin:15px;
 	cursor:default;
 	border-bottom: solid black;
 	border-right: solid black;
@@ -71,4 +72,8 @@ ul{
 
 .container span:hover::before{
 	opacity:1;
+}
+
+#aboutme1{
+	padding:1000px;
 }
