@@ -1,5 +1,7 @@
 html{ 
-	background-image:url("https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10882203_10152632643124053_4063156651353536299_n.jpg?oh=181944436fe265043abd9e80e0422350&oe=55640121&__gda__=1431876702_34e23ead194297484726a9016c39fb24")}
+	background-image:url("https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10882203_10152632643124053_4063156651353536299_n.jpg?oh=181944436fe265043abd9e80e0422350&oe=55640121&__gda__=1431876702_34e23ead194297484726a9016c39fb24");
+}
+
 h1{
 	font-family: Satisfy, cursive;
 	font-weight: normal;
@@ -10,7 +12,7 @@ h1{
 ul{
 	color: white;
 	font-family: Georgia;
-	text-align: ; 
+	padding-left:450px;
 }
 
 .container{
